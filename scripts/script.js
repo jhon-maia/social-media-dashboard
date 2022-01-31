@@ -10,11 +10,13 @@ const h1=document.querySelector("h1");
 
 let darkOn=true;
 
-btnDark.addEventListener("click",changeDark);
+btnDark.addEventListener("click",changeLigth);
 
 
-function changeDark()
+function changeLigth()
+
 {
+	if (darkOn==true){
 	body.style.backgroundColor="hsl(0, 0%, 100%)";
 
 	card.forEach(card=>{
@@ -55,6 +57,62 @@ function changeDark()
 
 
   h1.style.color="hsl(230, 17%, 14%)";
-	
+
+
+	darkOn=false;
+ }else{
+ 	changeDark();
+ }
 
 }
+
+
+
+function changeDark()
+{
+	body.style.backgroundColor=" hsl(230, 17%, 14%)";
+
+	card.forEach(card=>{
+    
+    card.style.backgroundColor=" hsl(228, 28%, 20%)";
+    card.style.color="hsl(0, 0%, 100%)";
+
+	});
+
+
+	header.style.backgroundColor="hsl(228, 28%, 20%)"
+	header.style.color="hsl(0, 0%, 100%)";
+   
+
+   span.forEach(span=>{
+    
+     span.style.color="hsl(0, 0%, 100%)"
+
+   });
+
+
+   
+   p.forEach(p=>{
+      
+      p.style.color="hsl(0, 0%, 100%)"
+
+
+   });
+
+
+
+   overviewBox.forEach(overviewBox=>{
+
+   overviewBox.style.backgroundColor="hsl(228, 28%, 20%)";
+
+
+   });
+
+
+  h1.style.color="hsl(0, 0%, 100%)";
+
+  
+	darkOn=true;
+
+}
+
