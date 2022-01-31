@@ -1,0 +1,175 @@
+body
+{
+	
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+.title-text
+{
+	color: white;
+	float: left;
+	display: inline-block;
+}
+
+.dark-mode-btn
+{
+float: right;
+color: white;
+display: flex;
+font-size: 20px;
+align-items: center;
+
+}
+
+
+
+.dark-mode-btn input[type=checkbox]
+{
+	-webkit-appearance:none ;
+	width: 90px;
+	height: 30px;
+	position: relative;
+	border-radius: 100px;
+	background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(11,168,137,1) 46%);
+}
+
+.cabecalho
+{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 2% 0;
+}
+
+.dark-mode-btn input[type=checkbox]::before
+{
+	position: absolute;
+	content: "";
+	height: 30px;
+	width: 30px;
+	border-radius: 50%;
+	background-color: hsl(0, 0%, 100%);
+	transform: translateX(60px);
+}
+
+.dark-mode-btn input[type=checkbox]:checked::before
+{
+	transform:translateX(0) ;
+
+}
+.social-media-box
+{
+	
+	color: hsl(0, 0%, 100%);
+	background-color:  hsl(228, 28%, 20%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-size: 20px;
+	width: 300px;
+	height: 300px;
+	
+}
+
+
+.followers-section
+{
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+.facebook
+{
+	border-top: 5px solid hsl(208, 92%, 53%);
+}
+
+.instagram
+{
+	border-top: 5px solid #b128f0 ;
+
+}
+
+.youtube
+{
+	border-top: 5px solid hsl(348, 97%, 39%);
+}
+
+.twitter
+{
+	border-top: 5px solid hsl(203, 89%, 53%);
+}
+
+.social-media-box .username
+{
+	display: flex;
+	align-items: center;
+	color:  hsl(0, 0%, 100%);
+}
+
+.social-media-box .count-follow
+{
+	display: flex;
+	flex-direction: column;
+	margin: 25px 0;
+	align-items: center;
+	font-size: 1.1em;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.social-media-box .count-follow span
+{
+	font-size: 4em;
+	font-weight: 700;
+}
+
+.overview-box
+{
+	width: 25%;
+	height: 150px;
+	background-color: hsl(228, 28%, 20%);
+	display: flex;
+	justify-content: center;
+    flex-direction: column;
+	padding: 10px;
+	
+}
+
+
+.section-overview
+{
+	color: white;
+}
+
+
+.overview-box-colection
+{
+	display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+span.page-views
+{
+	display: flex;
+	justify-content: space-between;
+	font-size: 1.1em;
+}
+
+.overview-box-colection .count-follow
+    {display: flex;
+	margin: 25px 0;
+	font-size: 2.1em;
+	font-weight: 400;
+	text-transform: uppercase;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.Dark
+{
+background-color:hsl(230, 17%, 14%);
+color: white;
+}
