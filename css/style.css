@@ -1,7 +1,8 @@
 body
 {
 	
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family:  'Inter', sans-serif;
+	font-weight: 700;
 }
 
 .title-text
@@ -69,6 +70,7 @@ align-items: center;
 	font-size: 20px;
 	width: 300px;
 	height: 300px;
+	font-weight: 700;
 	
 }
 
@@ -122,6 +124,7 @@ align-items: center;
 {
 	font-size: 4em;
 	font-weight: 700;
+
 }
 
 .overview-box
@@ -156,13 +159,14 @@ span.page-views
 	display: flex;
 	justify-content: space-between;
 	font-size: 1.1em;
+	font-weight: 700;
 }
 
 .overview-box-colection .count-follow
     {display: flex;
 	margin: 25px 0;
 	font-size: 2.1em;
-	font-weight: 400;
+	font-weight: 700;
 	text-transform: uppercase;
 	flex-direction: row;
 	justify-content: space-between;
